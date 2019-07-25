@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600,700|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:800&display=swap');
+
+body {
+  margin: 0;
+  /* background: url(maket-sajta-dlya-kliningovoj-kompanii\ черно\ белая.jpg); */
+  /* background-position:center top; */
+
+}
+
+/* типографика */
+h1 {
+  font-size: 64px;
+  font-family: 'Nunito', sans-serif;
+  color: red;
+  font-weight: bold;
+  line-height: 1.094;
+  text-align: center;
+  position: absolute;
+  top: 234px;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 43px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.233;
+
+}
+
+
+
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Contacting */
+.contact {
+  background-color: #1175b7;
+  height: 54px;
+  padding-top: 17.5px;
+  padding-bottom: 18px;
+  font-size: 16px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+
+
+}
+
+.contact>.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-text {
+  width: 400px;
+
+}
+
+.social-icon {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1111px;
+}
+
+.main {
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+
+
+
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 19px;
+  padding-top: 50px;
+}
+
+/* логотип */
+.logo {
+  width: 162px;
+  height: 32px;
+  margin-top: -6px;
+
+}
+
+/* кнопки */
+.header-button {
+  border-radius: 3px;
+  background-color: rgb(246, 169, 55);
+  width: 185px;
+  height: 50px;
+  font-size: 18px;
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 0.889;
+  margin-top: -15px;
+}
+
+.nav {
+  margin-left: 10px;
+}
+
+.nav__link {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(17, 117, 183);
+  font-weight: bold;
+  line-height: 0.889;
+  padding-right: 18px;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider {
+  background-color: green;
+  height: 100px;
+}
+
+.slick-slide img {
+  display: block;
+    width: 100%;
+}
+
+.about-us {
+  padding-top: 118px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.call-us {
+  background-color: #f6a937;
+  z-index: 3;
+  width: 40%;
+  height: 23.3%;
+  position: absolute;
+  bottom: 23px;
+  display: flex;
+  right: 13.5px;
+}
+
+.call-us__title__phone {
+  margin-left: 28.5px;
+}
+
+.call-us h4 {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.333;
+  margin-top: 63px;
+}
+
+.call-us p {
+
+  font-size: 35px;
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 0.457;
+  margin: 0;
+
+}
+
+
+.call__phone-vector-smart-object {
+  margin-left: 76px;
+  margin-top: 73px;
+}
+
+.about {
+  background-color: #038fd6;
+  color: white;
+  z-index: 2;
+  width: 37%;
+  position: absolute;
+  right: -13px;
+  top: 90px;
+  bottom: 231px;
+  padding: 132px 49.5px 106px 64.5px;
+  border: 28.5px solid;
+}
+
+.about h3 {
+  font-size: 43px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.233;
+  margin-bottom: 39px;
+
+}
+.about h4 {
+    font-size: 18px;
+    font-family: "JosefinSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.444;
+    margin-bottom: 102px
+  }
+  
+
+
+.about p {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(254, 254, 255);
+  font-weight: bold;
+  line-height: 0.889;
+
+}
+
+
+
+
+
+.about-us-image {
+  z-index: 1;
+  width: 100%;
+  position: relative;
+}
+
+.our-services {
+
+  padding: 132px 142px 116px 145px;
+  height: 935px;
+}
+
+
+.overview {
+  background-color: #038fd6;
+  padding-top: 88px;
+  padding-bottom: 100px;
+
+}
+
+.overview>.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.why-choose-us {
+  padding-top: 118px;
+  padding-bottom: 73, 99px;
+}
+
+.why-choose-us>.container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.why-choose-us_text {
+  margin-left: 56px;
+}
+
+.why-choose-us_text h2 {
+  font-size: 43px;
+  font-family: "Raleway";
+  color: rgb(3, 143, 214);
+  font-weight: bold;
+  line-height: 1.279;
+  margin-bottom: 58px;
+}
+
+.why-choose-us_text p {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(3, 143, 214);
+  font-weight: bold;
+  line-height: 0.889;
+}
+
+.why-choose-us_image {
+  width: 50%;
+}
+
+.why-choose-us_list {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 20px;
+  font-family: "JosefinSans";
+  color: rgb(65, 65, 65);
+  line-height: 2.1;
+}
+
+.certified-company-block {
+  border-radius: 3px;
+  background-color: rgb(246, 169, 55);
+  width: 270px;
+  height: 102px;
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.333;
+  text-align: left;
+  display: inline-flex;
+  padding: 23px;
+}
+
+
+
+
+/* блок service */
+.service {
+  background-color: #f9f5f2;
+  padding-top: 138px;
+  padding-bottom: 120px;
+}
+
+.service>.container>p {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(246, 169, 55);
+  font-weight: bold;
+  line-height: 0.889;
+  text-align: center;
+
+}
+
+.service>.container>h2 {
+  font-size: 43px;
+  font-family: "Raleway";
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  line-height: 1.279;
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+
+/* каруселька */
+
+.carousel {
+  position: relative;
+  width: 100%;
+  padding: 10px 40px;
+  background: #f9f5f2;
+  height: 546px;
+
+}
+
+.carousel img {
+
+  /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
+
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 264px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #038fd6;
+  cursor: pointer;
+
+}
+
+.prev {
+  left: 7px;
+
+
+}
+
+.prev::after {
+  content: '<';
+  color: #038fd6;
+}
+
+
+.next {
+  right: 7px;
+  margin-right: -48px;
+}
+
+.next::after {
+  content: '>';
+  color: #038fd6;
+
+}
+
+.gallery {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery ul {
+  width: 9999px;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+  height: 550px;
+}
+
+.gallery li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+
+.smart-object {
+  display: block;
+  width: 70, 5px;
+  height: 72px;
+  margin-bottom: 26px;
+  margin-left: 51px;
+  margin-top: 33px;
+}
+
+.gallery h3 {
+  margin-left: 51px;
+  font-size: 22px;
+  font-family: "Raleway";
+  color: rgb(141, 140, 140);
+  font-weight: bold;
+  line-height: 2.5;
+}
+
+.gallery p {
+  width: 269px;
+  margin-left: 51px;
+  font-size: 16px;
+  font-family: "JosefinSans";
+  color: rgb(132, 132, 132);
+  line-height: 1.5;
+
+}
+
+.images-bg-blue {
+  background: #038fd6;
+}
+
+.images-bg-white {
+  background-color: #ffff;
+}
+
+.images-bg-blue>p,
+.images-bg-blue>h3 {
+  color: #ffffff;
+}
+
+/* форма обратной связи  */
+.feedback-form {
+  background-color: #fce5c3;
+  z-index: 2;
+  width: 37%;
+  position: absolute;
+  right: -13px;
+  top: 90px;
+  bottom: 231px;
+  padding: 52.5px 58.5px 49.5px 61.5px;
+  border: 28.5px solid white;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#survey-form label {
+  margin-bottom: 18px;
+}
+
+#survey-form input {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 411px;
+  height: 59px;
+  padding-left: 25px;
+}
+
+#survey-form ::placeholder{
+
+    font-size: 16px;
+    font-family: "JosefinSans";
+    color: rgb(65, 65, 65);
+    line-height: 1;
+  }
+  
+  #survey-form button {
+      border-radius: 4px;
+      background-color: rgb(246, 169, 55);
+      width: 184px;
+      height: 58px;
+      margin-top: 24px;
+      font-size: 18px;
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 0.889;
+    }
+    
+  
+.feedback-form h3 {
+font-size: 43px;
+font-family: "Raleway";
+color: rgb(65, 65, 65);
+font-weight: bold;
+line-height: 1.279;
+ margin: 0;
+}
+
+.feedback-form  p {
+    font-size: 18px;
+    font-family: "Raleway";
+    color: rgb(65, 65, 65);
+    font-weight: bold;
+    line-height: 0.889;
+   
+  }
+  
+/* контакты футер */
+.contact-footer {
+  height: 100px;
+  border: 1px solid rgb(176, 167, 214);
+
+}
+
+/* футер */
+.footer {
+  background-image: url('img/footer-bg.png');
+
+
+}
+
+.footer-wrapper {
+  display: flex;
+  
+}
+.footer-col-1,
+.footer-col-2 {
+display: flex;
+flex-direction: column;
+font-size: 16px;
+font-family: "JosefinSans";
+color: rgb(255, 255, 255);
+line-height: 2.5;
+}
+
+
+
+.enter-your-email {
+  padding: 0;
+}
+
+
+
+
+
+.footer h3{
+font-size: 22px;
+font-family: "JosefinSans";
+color: rgb(255, 255, 255);
+font-weight: bold;
+line-height: 0.727;
+  }
+  
+.footer-col-1 p,
+.footer-col-3 p {
+    font-size: 16px;
+    font-family: "JosefinSans";
+    color: rgb(235, 230, 230);
+    line-height: 1.625;
+    width: 280px;
+  }
+
+  
+
+
+.footer-col-2_first>a,
+.footer-col-2_second>a{
+font-size: 16px;
+font-family: "JosefinSans";
+color: rgb(255, 255, 255);
+line-height: 2.5;
+text-decoration: none;
+display: flex;
+}
+
+.footer-col-wrapper {
+  display: flex;
+ display: row;
+
+}
