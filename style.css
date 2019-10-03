@@ -3,23 +3,25 @@
 
 body {
   margin: 0;
-  /* background: url(maket-sajta-dlya-kliningovoj-kompanii\ черно\ белая.jpg); */
-  /* background-position:center top; */
-
+  
 }
 
 /* типографика */
 h1 {
   font-size: 64px;
   font-family: 'Nunito', sans-serif;
-  color: red;
+  color: white;
   font-weight: bold;
   line-height: 1.094;
   text-align: center;
   position: absolute;
-  top: 234px;
+  top: 250px;
   z-index: 1;
+  left: 300px;
+  right: 200px;
 }
+
+
 
 h2 {
   font-size: 43px;
@@ -54,8 +56,7 @@ p {
   font-size: 16px;
   font-family: "Raleway";
   color: rgb(255, 255, 255);
-
-
+  
 }
 
 .contact>.container {
@@ -64,11 +65,17 @@ p {
   justify-content: space-between;
 }
 
-.contact-text {
+.header-contact-text {
   width: 400px;
 
 }
 
+.header-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+ 
+}
 .social-icon {
   display: flex;
   flex-direction: row;
@@ -80,7 +87,7 @@ p {
   width: 1111px;
 }
 
-.main {
+.header-img {
   max-width: 100%;
   margin: 0 auto;
 
@@ -89,13 +96,17 @@ p {
 
 
 
+.header-nav {
 
+  background-color: white; 
+}
 
-.header {
+.header-nav>.container {
   display: flex;
   justify-content: space-between;
   padding-bottom: 19px;
   padding-top: 50px;
+  padding-top: 36px;
 }
 
 /* логотип */
@@ -120,11 +131,15 @@ p {
   margin-top: -15px;
 }
 
+.header-button:hover{
+background-color: #1175b7;
+}
+
 .nav {
   margin-left: 10px;
 }
 
-.nav__link {
+.nav-link {
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   color: rgb(17, 117, 183);
@@ -134,6 +149,10 @@ p {
   text-decoration: none;
 }
 
+.nav-link:hover{
+color:orange;
+width:bold;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -146,7 +165,7 @@ img {
 
 .slick-slide img {
   display: block;
-    width: 100%;
+  width: 100%;
 }
 
 .about-us {
@@ -205,7 +224,7 @@ img {
   right: -13px;
   top: 90px;
   bottom: 231px;
-  padding: 132px 49.5px 106px 64.5px;
+  padding: 100px 49.5px 106px 64.5px;
   border: 28.5px solid;
 }
 
@@ -218,14 +237,15 @@ img {
   margin-bottom: 39px;
 
 }
+
 .about h4 {
-    font-size: 18px;
-    font-family: "JosefinSans";
-    color: rgb(255, 255, 255);
-    line-height: 1.444;
-    margin-bottom: 102px
-  }
-  
+  font-size: 18px;
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  line-height: 1.444;
+  margin-bottom: 102px
+}
+
 
 
 .about p {
@@ -327,13 +347,17 @@ img {
   padding: 23px;
 }
 
-
+.certified-company-block img {
+  height: 50%;
+  margin-top: 25px;
+  margin-right: 10px;
+}
 
 
 /* блок service */
 .service {
   background-color: #f9f5f2;
-  padding-top: 138px;
+  padding-top: 83px;
   padding-bottom: 120px;
 }
 
@@ -354,7 +378,8 @@ img {
   font-weight: bold;
   line-height: 1.279;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
 }
 
@@ -515,46 +540,46 @@ img {
   padding-left: 25px;
 }
 
-#survey-form ::placeholder{
+#survey-form ::placeholder {
 
-    font-size: 16px;
-    font-family: "JosefinSans";
-    color: rgb(65, 65, 65);
-    line-height: 1;
-  }
-  
-  #survey-form button {
-      border-radius: 4px;
-      background-color: rgb(246, 169, 55);
-      width: 184px;
-      height: 58px;
-      margin-top: 24px;
-      font-size: 18px;
+  font-size: 16px;
+  font-family: "JosefinSans";
+  color: rgb(65, 65, 65);
+  line-height: 1;
+}
+
+#survey-form button {
+  border-radius: 4px;
+  background-color: rgb(246, 169, 55);
+  width: 184px;
+  height: 58px;
+  margin-top: 9px;
+  font-size: 18px;
   font-family: "JosefinSans";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 0.889;
-    }
-    
-  
-.feedback-form h3 {
-font-size: 43px;
-font-family: "Raleway";
-color: rgb(65, 65, 65);
-font-weight: bold;
-line-height: 1.279;
- margin: 0;
 }
 
-.feedback-form  p {
-    font-size: 18px;
-    font-family: "Raleway";
-    color: rgb(65, 65, 65);
-    font-weight: bold;
-    line-height: 0.889;
-   
-  }
-  
+
+.feedback-form h3 {
+  font-size: 43px;
+  font-family: "Raleway";
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  line-height: 1.279;
+  margin: 0;
+}
+
+.feedback-form p {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  line-height: 0.889;
+
+}
+
 /* контакты футер */
 .contact-footer {
   height: 100px;
@@ -571,16 +596,17 @@ line-height: 1.279;
 
 .footer-wrapper {
   display: flex;
-  
+
 }
+
 .footer-col-1,
 .footer-col-2 {
-display: flex;
-flex-direction: column;
-font-size: 16px;
-font-family: "JosefinSans";
-color: rgb(255, 255, 255);
-line-height: 2.5;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  line-height: 2.5;
 }
 
 
@@ -593,38 +619,81 @@ line-height: 2.5;
 
 
 
-.footer h3{
-font-size: 22px;
-font-family: "JosefinSans";
-color: rgb(255, 255, 255);
-font-weight: bold;
-line-height: 0.727;
-  }
-  
+.footer h3 {
+  font-size: 22px;
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 0.727;
+}
+
 .footer-col-1 p,
 .footer-col-3 p {
-    font-size: 16px;
-    font-family: "JosefinSans";
-    color: rgb(235, 230, 230);
-    line-height: 1.625;
-    width: 280px;
-  }
+  font-size: 16px;
+  font-family: "JosefinSans";
+  color: rgb(235, 230, 230);
+  line-height: 1.625;
+  width: 280px;
+}
 
-  
+
 
 
 .footer-col-2_first>a,
-.footer-col-2_second>a{
-font-size: 16px;
-font-family: "JosefinSans";
-color: rgb(255, 255, 255);
-line-height: 2.5;
-text-decoration: none;
-display: flex;
+.footer-col-2_second>a {
+  font-size: 16px;
+  font-family: "JosefinSans";
+  color: rgb(255, 255, 255);
+  line-height: 2.5;
+  text-decoration: none;
+  display: flex;
 }
 
 .footer-col-wrapper {
   display: flex;
- display: row;
+  display: row;
 
 }
+
+
+
+/* Our-project */
+
+.our-projects-title {
+  font-size: 43px;
+  font-family: "Raleway";
+  color: rgb(65, 65, 65);
+  font-weight: bold;
+  line-height: 0.372;
+  text-align: center;
+}
+  .our-projects p {
+    font-size: 18px;
+    font-family: "JosefinSans";
+    color: rgb(119, 119, 119);
+    line-height: 1.333;
+    text-align: center;
+  }
+
+
+  @media (min-width: 576px) {
+  #home {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  h1 {font-size: 30px;
+
+  }
+
+  #nav-bar {
+   
+  }
+   }
+
+  @media (min-width: 768px) { ... }
+
+  @media (min-width: 992px) { ... }
+
+  @media (min-width: 1200px) { ... }
+
