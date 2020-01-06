@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Макет для клининговой компании</title>
-  <link rel="stylesheet" href="slick/slick.css">
-  <link rel="stylesheet" href="slick/slick-theme.css">
+  <title>Сайт для клининговой компании</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="sprite.css">
-
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
 </head>
 
 <body>
   <header id="header">
+
     <section class="header-nav">
-        <div class="container">
-        <div class="logo"><img src="img/H.png" alt="logo"></div>
+      <div class="container">
+        <div class="logo"><a href="index.html"><img src="img/H.png" alt="logo"></a></div>
         <nav class="nav" id="nav-bar">
           <a class="nav-link" href="#home">Home</a>
           <a class="nav-link" href="#about">About Us</a>
@@ -26,17 +27,24 @@
           <a class="nav-link" href="#">Blog</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
-
-        <button class="header-button">Request a Quote</button>
+        <a class="header-button" href="#quote">Reguest a Quote</a>
       </div>
-    
     </section>
 
     <section class="header-img" id="home">
       <h1>Cleaning Yours House Make<br> World & Clean Mine</h1>
-      <img src="img/Bannar.png" alt="Header image">
+
+
+      <div class="header-carusel">
+        <div><img src="img/Bannar.png" alt="carusel  image"></div>
+        <div><img src="img/man-cleaing-computer.jpg" alt="carusel  image"></div>
+        <div><img src="img/shutterstock_160344230.jpg" alt="carusel  image"></div>
+      </div>
     </section>
   </header>
+
+
+
   <section class="container">
     <div class="about-us">
       <div class="call-us">
@@ -44,7 +52,7 @@
         </div>
         <div class="call-us__title__phone">
           <h4 class="title">Call Us Today</h4>
-          <p>1-785-452-4521</p>
+          <p><a href="tel:1-785-452-4521">1-785-452-4521</a></p>
         </div>
 
       </div>
@@ -64,104 +72,102 @@
     </div>
   </section>
 
-  <!-- каруселька -->
+
   <section class="service" id="service">
     <div class="container">
       <p>What we are offering</p>
       <h2>Our Services</h2>
 
-      <div id="carousel" class="carousel">
-        <button class="arrow prev"></button>
+
+      <div id="carousel-images" class="carousel">
         <div class="gallery">
-          <ul class="images">
-            <li class="images-bg-white"><img src="img/house cleaning.png">
-              <img src="img/Vector Smart Object1.png" alt="" class="smart-object">
-              <h3>Garden Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
+          <div class="images-bg-white"><img src="img/house cleaning.png">
+            <img src="img/Vector Smart Object1.png" alt="" class="smart-object">
+            <h3>Garden Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
 
-            <li class="images-bg-blue"><img src="img/windows cleaning.png">
-              <img src="img/Vector Smart Object2.png" alt="" class="smart-object">
-              <h3>Window Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
-
-
-            <li class="images-bg-white"><img src="img/Image.png">
-              <img src="img/Vector Smart Object3.png" alt="" class="smart-object">
-              <h3>House Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
-
-            <li class="images-bg-white"><img src="img/house cleaning.png">
-              <img src="img/Vector Smart Object1.png" alt="" class="smart-object">
-              <h3>Garden Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
-
-            <li class="images-bg-blue"><img src="img/windows cleaning.png">
-              <img src="img/Vector Smart Object2.png" alt="" class="smart-object">
-              <h3>Window Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
+          <div class="images-bg-blue"><img src="img/windows cleaning.png">
+            <img src="img/Vector Smart Object2.png" alt="" class="smart-object">
+            <h3>Window Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
 
 
-            <li class="images-bg-white"><img src="img/Image.png">
-              <img src="img/Vector Smart Object3.png" alt="" class="smart-object">
-              <h3>House Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
+          <div class="images-bg-white"><img src="img/Image.png">
+            <img src="img/Vector Smart Object3.png" alt="" class="smart-object">
+            <h3>House Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
 
-            <li class="images-bg-white"><img src="img/house cleaning.png">
-              <img src="img/Vector Smart Object1.png" alt="" class="smart-object">
-              <h3>Garden Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
+          <div class="images-bg-white"><img src="img/house cleaning.png">
+            <img src="img/Vector Smart Object1.png" alt="" class="smart-object">
+            <h3>Garden Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
 
-            <li class="images-bg-blue"><img src="img/windows cleaning.png">
-              <img src="img/Vector Smart Object2.png" alt="" class="smart-object">
-              <h3>Window Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
+          <div class="images-bg-blue"><img src="img/windows cleaning.png">
+            <img src="img/Vector Smart Object2.png" alt="" class="smart-object">
+            <h3>Window Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
 
 
-            <li class="images-bg-white"><img src="img/Image.png">
-              <img src="img/Vector Smart Object3.png" alt="" class="smart-object">
-              <h3>House Cleaning</h3>
-              <p>A wonderful serenity has taken of my
-                entire soul, like these sweet spring his
-                which enjoy with my whole heart,like a
-                these sweet spring. </p>
-            </li>
-          </ul>
+          <div class="images-bg-white"><img src="img/Image.png">
+            <img src="img/Vector Smart Object3.png" alt="" class="smart-object">
+            <h3>House Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
+
+          <div class="images-bg-white"><img src="img/house cleaning.png">
+            <img src="img/Vector Smart Object1.png" alt="" class="smart-object">
+            <h3>Garden Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
+
+          <div class="images-bg-blue"><img src="img/windows cleaning.png">
+            <img src="img/Vector Smart Object2.png" alt="" class="smart-object">
+            <h3>Window Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring. </p>
+          </div>
+
+
+          <div class="images-bg-white"><img src="img/Image.png">
+            <img src="img/Vector Smart Object3.png" alt="" class="smart-object">
+            <h3>House Cleaning</h3>
+            <p>A wonderful serenity has taken of my
+              entire soul, like these sweet spring his
+              which enjoy with my whole heart,like a
+              these sweet spring.
+            </p>
+          </div>
         </div>
-        <button class="arrow next"></button>
+
       </div>
-    </div>
 
   </section>
 
@@ -169,15 +175,13 @@
 
   <section class="overview">
     <div class="container">
-      <img src="img/100% Free Estimates.png" alt="">
-      <img src="" alt="" class="icon-vertical-line">
       <img src="img/Insured & Boudede.png" alt="">
       <img src="" alt="" class="icon-vertical-line">
       <img src="img/Quality Standards.png" alt="">
       <img src="" alt="" class="icon-vertical-line">
       <img src="img/5 Years Exprience.png" alt="">
     </div>
- 
+
   </section>
 
   <section class="why-choose-us" id="projects">
@@ -222,11 +226,11 @@
         </div>
         <div class="call-us__title__phone">
           <h4 class="title">Call Us Today</h4>
-          <p>1-785-452-4521</p>
+          <p><a href="tel:1-785-452-4521">1-785-452-4521</a></p>
         </div>
 
       </div>
-      <div class="feedback-form">
+      <div class="feedback-form" id="quote">
         <p class="icon-orange-line"> </p>
         <p>Book Service Today</p>
         <h3>Get a free Quote</h3>
@@ -236,7 +240,7 @@
           <label for="email" id="email-label"></label><input type="email" id="email" required placeholder="Your email:">
           <label for="phone" id="number-label"></label><input type="tel" min="0" max="10" id="phone"
             placeholder="Your phone:">
-          <button type="submit" id="submit">Submite Now</button>
+          <button type="submit" id="submit" class="survey-form-submit">Submite Now</button>
         </form>
       </div>
       <div class="about-us-image">
@@ -248,71 +252,31 @@
 
 
   <section class="footer">
-      <section class="contact">
-          <div class="container">
-            <div class="contact-sprite">
-              <p><img src="" alt="" class="icon-location">1-785-452-4521</p>
-            </div>
-    
-            <div class="contact-sprite">
-              <p><img src="" alt="" class="icon-phone">333 Road Broken Street,88 New York</p>
-            </div>
-    
-            <div class="icon_sprite">
-              <p><img src="" alt="" class="icon-o-clock">Mon - Sat 8.00am - 6.00pm</p>
-            </div>
-    
-    
-            <div class="social-icon">
-              <div class="icon-twitter"></div>
-              <div class="icon-facebook"></div>
-              <div class="icon-youtube"></div>
-              <div class="icon-google"></div>
-            </div>
-        </section>
+    <section class="contact">
+      <div class="container">
+        <div class="contact-sprite">
+          <p><img src="" alt="" class="icon-phone">1-785-452-4521</p>
+        </div>
+
+        <div class ="contact-sprite">
+          <p><a href="https://yandex.ru/maps/-/CGxOfE3c"><img src="" alt="" class="icon-location">333 Road Broken Street,88 New York</a></p>
+        </div>
+
+        <div class="icon_sprite">
+          <p><img src="" alt="" class="icon-o-clock">Mon - Sat 8.00am - 6.00pm</p>
+        </div>
+       
+
+        <div class="social-icon">
+          <div class="icon-twitter"></div>
+          <div class="icon-facebook"></div>
+          <div class="icon-youtube"></div>
+          <div class="icon-google"></div>
+        </div>
+    </section>
   </section>
 
 
-
-
-
-  <script>
-    /* этот код помечает картинки, для удобства разработки */
-    var lis = document.getElementsByTagName('li');
-    for (var i = 0; i < lis.length; i++) {
-      lis[i].style.position = 'relative';
-      var span = document.createElement('span');
-      // обычно лучше использовать CSS-классы,
-      // но этот код - для удобства разработки, так что не будем трогать стили
-      span.style.cssText = 'position:absolute;left:0;top:0';
-      span.innerHTML = i + 1;
-      lis[i].appendChild(span);
-    }
-
-    /* конфигурация */
-    var width = 200; // ширина изображения
-    var count = 3; // количество изображений
-
-    var carousel = document.getElementById('carousel');
-    var list = carousel.querySelector('ul');
-    var listElems = carousel.querySelectorAll('li');
-
-    var position = 0; // текущий сдвиг влево
-
-    carousel.querySelector('.prev').onclick = function () {
-      // сдвиг влево
-      // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-      position = Math.min(position + width * count, 0)
-      list.style.marginLeft = position + 'px';
-    };
-
-    carousel.querySelector('.next').onclick = function () {
-      // сдвиг вправо
-      // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
-      position = Math.max(position - width * count, -width * (listElems.length - count));
-      list.style.marginLeft = position + 'px';
-    };
-  </script>
   <!-- Подключаем скрипты -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="slick/slick.min.js"></script>

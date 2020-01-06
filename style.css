@@ -65,6 +65,7 @@ p {
   justify-content: space-between;
 }
 
+
 .header-contact-text {
   width: 400px;
 
@@ -85,6 +86,7 @@ p {
 .container {
   margin: 0 auto;
   width: 1111px;
+ 
 }
 
 .header-img {
@@ -97,7 +99,7 @@ p {
 
 
 .header-nav {
-
+position: fixed;
   background-color: white; 
 }
 
@@ -113,10 +115,17 @@ p {
 .logo {
   width: 162px;
   height: 32px;
-  margin-top: -6px;
+  margin-top: 8px;
 
 }
 
+.logo:hover {
+transform: scale(1.2);
+}
+
+.logo:active {
+  transform: scale(0.8);
+}
 /* кнопки */
 .header-button {
   border-radius: 3px;
@@ -128,19 +137,28 @@ p {
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 0.889;
-  margin-top: -15px;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 15px;
+  box-sizing: border-box;
 }
 
-.header-button:hover{
+
+.header-button:hover {
 background-color: #1175b7;
 }
 
+.header-button:active {
+transform: scale(0.8);
+  }
+  
 .nav {
   margin-left: 10px;
+  margin-top: 15px;
 }
 
 .nav-link {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;
   color: rgb(17, 117, 183);
   font-weight: bold;
@@ -153,6 +171,8 @@ background-color: #1175b7;
 color:orange;
 width:bold;
 }
+
+
 img {
   max-width: 100%;
   height: auto;
@@ -165,8 +185,10 @@ img {
 
 .slick-slide img {
   display: block;
-  width: 100%;
+padding: 10px 10px;
 }
+
+
 
 .about-us {
   padding-top: 118px;
@@ -198,17 +220,30 @@ img {
   margin-top: 63px;
 }
 
-.call-us p {
-
+.call-us a {
   font-size: 35px;
   font-family: "JosefinSans";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 0.457;
   margin: 0;
-
+  text-decoration: none;
+  animation: blink 3s infinite;
 }
 
+@keyframes blink {
+  from { opacity: 0; /* Непрозрачный текст */ }
+  to { opacity: 1; /* Прозрачный текст */ }
+ }
+
+.call-us a:hover {
+color: #038fd6;
+animation: none;
+}
+
+.call-us p:active {
+ transform: scale(0.8);
+  }
 
 .call__phone-vector-smart-object {
   margin-left: 76px;
@@ -318,6 +353,9 @@ img {
   line-height: 0.889;
 }
 
+.med {
+  margin-right: 20px;
+}
 .why-choose-us_image {
   width: 50%;
 }
@@ -345,6 +383,7 @@ img {
   text-align: left;
   display: inline-flex;
   padding: 23px;
+  margin-top: 15px;
 }
 
 .certified-company-block img {
@@ -383,12 +422,23 @@ img {
 
 }
 
+/* слайдер*/
+.header-carusel {
+
+}
+
+.header-carusel img {
+height: 100vh;
+width: 100%;
+object-fit: fill;
+}
+
 /* каруселька */
 
 .carousel {
   position: relative;
   width: 100%;
-  padding: 10px 40px;
+  padding: 40px 100px;
   background: #f9f5f2;
   height: 546px;
 
@@ -401,68 +451,56 @@ img {
   display: block;
 }
 
-.arrow {
-  position: absolute;
+ 
+.sprite-next {
+  right:10px;
+  }
+
+
+
+.sprite-prev {
+left:10px;
+}
+
+.sprite-prev:before {
+  content: "←";
+  font-weight: 900;
+  }
+
+.sprite-next:before {
+content: " →";
+font-weight: 900;
+}
+
+.slick-arrow {
+   position: absolute;
   top: 264px;
-  padding: 10px;
-  background: #fff;
-  border-radius: 50%;
-  border: none;
-  font-size: 16px;
-  line-height: 24px;
-  display: block;
-}
-
-.arrow:focus {
-  outline: none;
-}
-
-.arrow:hover {
+  padding: 15px;
   background: #038fd6;
-  cursor: pointer;
-
+  border-radius: 60%;
+  border: none;
+  font-size: 26px;
+  line-height: 24px;
+  display: block; 
+  color: #fff;
 }
 
-.prev {
-  left: 7px;
+.slick-arrow:hover {
+  background: rgb(246, 169, 55);
+ }
 
 
+.slick-arrow:active {
+   background: rgb(246, 169, 55);
 }
 
-.prev::after {
-  content: '<';
-  color: #038fd6;
-}
 
-
-.next {
-  right: 7px;
-  margin-right: -48px;
-}
-
-.next::after {
-  content: '>';
-  color: #038fd6;
-
-}
 
 .gallery {
   width: 100%;
   overflow: hidden;
 }
 
-.gallery ul {
-  width: 9999px;
-  list-style: none;
-  transition: margin-left 250ms;
-  font-size: 0;
-  height: 550px;
-}
-
-.gallery li {
-  display: inline-block;
-  margin-right: 20px;
-}
 
 
 
@@ -553,14 +591,23 @@ img {
   background-color: rgb(246, 169, 55);
   width: 184px;
   height: 58px;
-  margin-top: 9px;
   font-size: 18px;
   font-family: "JosefinSans";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 0.889;
+  display: block;
+  margin: 10px auto;
 }
 
+
+#survey-form button:hover {
+background-color: #038fd6;
+}
+
+#survey-form button:active {
+transform: scale(0.8);
+  }
 
 .feedback-form h3 {
   font-size: 43px;
@@ -682,7 +729,7 @@ img {
     display: block;
     height: auto;
   }
-  h1 {font-size: 30px;
+  h1 {font-size: 65px;
 
   }
 
