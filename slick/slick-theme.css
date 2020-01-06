@@ -36,19 +36,19 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: #038fd6;
     border: none;
     outline: none;
-    background: transparent;
+    background:   #fff;
 }
 .slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
+    color: #038fd6;
     outline: none;
-    background: transparent;
+    background: #fff;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -79,7 +79,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    
+    left: -70px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +98,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: -70px;
 }
 [dir='rtl'] .slick-next
 {
@@ -178,7 +179,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 20px;
     line-height: 20px;
 
     position: absolute;
