@@ -261,6 +261,7 @@ animation: none;
   bottom: 231px;
   padding: 100px 49.5px 106px 64.5px;
   border: 28.5px solid;
+  margin:10px 30px 10px 30px;
 }
 
 .about h3 {
@@ -358,6 +359,7 @@ animation: none;
 }
 .why-choose-us_image {
   width: 50%;
+  padding: 10px 10px 10px 10px;
 }
 
 .why-choose-us_list {
@@ -427,6 +429,9 @@ animation: none;
 
 }
 
+
+
+
 .header-carusel img {
 height: 100vh;
 width: 100%;
@@ -437,8 +442,7 @@ object-fit: fill;
 
 .carousel {
   position: relative;
-  width: 100%;
-  padding: 40px 100px;
+  padding: 40px 77px;
   background: #f9f5f2;
   height: 546px;
 
@@ -723,24 +727,28 @@ transform: scale(0.8);
   }
 
 
-  @media (min-width: 576px) {
-  #home {
-    max-width: 100%;
-    display: block;
-    height: auto;
-  }
-  h1 {font-size: 65px;
+  @media (max-width: 576px) {
 
-  }
-
-  #nav-bar {
-   
-  }
    }
 
-  @media (min-width: 768px) { ... }
+  @media (max-width: 768px) { 
+    .about-us-image img {
+      display: none;
+    }
+      
 
-  @media (min-width: 992px) { ... }
 
-  @media (min-width: 1200px) { ... }
+.about {
+  position: initial;
+  width: 83%;
+}
+  @media (max-width: 992px) { 
+ 
+   }
+
+   
+
+
+
+  @media (max-width: 1200px) { ... }
 
